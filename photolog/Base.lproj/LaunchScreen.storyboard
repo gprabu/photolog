@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ib-3A-18o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aOS-hZ-jxj">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="K7I-jY-9hS">
+                            <connections>
+                                <segue destination="PI9-Eo-qUM" kind="show" id="Q3a-ku-Z1E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2460" y="290"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OTl-Mp-9XS">
+            <objects>
+                <viewController id="PI9-Eo-qUM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FW6-kb-dcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wW8-0w-vf9">
+                                <rect key="frame" x="67" y="84" width="240" height="120"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fbA-MG-ICB">
+                                <rect key="frame" x="175" y="224" width="240" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9S-fb-xnB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wW8-0w-vf9" firstAttribute="top" secondItem="LU2-Lq-UjR" secondAttribute="top" constant="20" id="H86-nF-Mny"/>
+                            <constraint firstItem="LU2-Lq-UjR" firstAttribute="bottom" secondItem="fbA-MG-ICB" secondAttribute="bottom" constant="413" id="Nyq-DQ-462"/>
+                            <constraint firstItem="fbA-MG-ICB" firstAttribute="leading" secondItem="LU2-Lq-UjR" secondAttribute="leading" constant="175" id="SuO-Yw-xj8"/>
+                            <constraint firstItem="wW8-0w-vf9" firstAttribute="leading" secondItem="LU2-Lq-UjR" secondAttribute="leading" constant="67" id="bnD-Dm-xiD"/>
+                            <constraint firstItem="wW8-0w-vf9" firstAttribute="centerX" secondItem="FW6-kb-dcf" secondAttribute="centerX" id="ctY-Xd-Nuc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fbA-MG-ICB" secondAttribute="trailing" constant="-56" id="emu-IV-Dah"/>
+                            <constraint firstItem="fbA-MG-ICB" firstAttribute="top" secondItem="wW8-0w-vf9" secondAttribute="bottom" constant="20" id="fsu-Hc-2Ki"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LU2-Lq-UjR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="55F-fP-Rhi">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="camera" id="cyb-lU-2VY"/>
+                            <barButtonItem title="Photo" id="v58-P9-9Lq"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KK-vd-6mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1968" y="278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ePX-ZT-nsb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ib-3A-18o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NgX-Rk-ynY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="01J-lp-oVM" kind="relationship" relationship="rootViewController" id="lmy-uz-l31"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOY-4P-574" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2937" y="238"/>
+        </scene>
+    </scenes>
+</document>
